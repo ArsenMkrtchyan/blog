@@ -436,7 +436,7 @@
                                 <aside class="etw-inquery-group">
                                     <input id="etwfrom-title" value="" type="hidden">
                                     <input id="etwfrom-url" value="" type="hidden">
-                                    <input id="etwfrom-fax" value="" type="hidden">
+                                    <input id="etwfrom-fax" valuse="" type="hidden">
                                     <input id="etwfrom-ip" value="5.77.210.237" type="hidden">
                                     <input id="etwfrom-usernameid" value="3536" type="hidden">
                                     <input id="etwfrom-language" value="English" type="hidden">

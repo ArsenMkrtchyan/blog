@@ -19,6 +19,14 @@ class TractorController extends Controller
         return view('tractors.index',compact('tractors'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
+    public function tracindex()
+    {
+        $tractors = Tractor::latest()->paginate(5);
+
+        return view('indexes.index',compact('tractors'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
     public function catalog()
     {
         $tractors = Tractor::all();
