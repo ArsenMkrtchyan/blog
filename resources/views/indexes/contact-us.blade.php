@@ -55,7 +55,8 @@
                         center="40.817882,44.492218"
                         zoom="15"
                         map-id="DEMO_MAP_ID"
-                        style="height: 400px"
+                        style="height: 400px;padding-left: 60px"
+
                     >
                         <gmp-advanced-marker
                             position="40.817882,44.492218"

@@ -1,1 +1,0 @@
-setcountrydata({"address":"am","plat_web":"https:\/\/www.etwinternational.com"})

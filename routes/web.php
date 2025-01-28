@@ -8,7 +8,7 @@ use App\Http\Controllers\BlogController;
 use App\Models\Tractor;
 Route::get('/', function () {
     return view('indexes.index');
-});
+})->name('indextrac');
 
 Auth::routes([
     'register' => false, // Registration Routes...

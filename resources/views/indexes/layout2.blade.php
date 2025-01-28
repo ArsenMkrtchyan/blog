@@ -24,6 +24,8 @@
 {{--    <link rel="stylesheet" href="./Agricultural Machinery Supplier _ YTO_files/owl.theme.default.min.css">--}}
 {{--    <link type="text/css" href="./Agricultural Machinery Supplier _ YTO_files/videocss.css" rel="stylesheet">--}}
 {{--    <link rel="stylesheet" href="./Agricultural Machinery Supplier _ YTO_files/plyr.css">--}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}" >
     <link type="text/css" href="{{ asset('Agricultural Machinery Supplier _ YTO_files/font-awesome.min.css') }}" rel="stylesheet">
     <link type="text/css" href="{{ asset('Agricultural Machinery Supplier _ YTO_files/magnific-popup.css') }}" rel="stylesheet">
@@ -49,7 +51,7 @@
     <div id="header">
         <div id="headerin" class="clearfix">
 
-            <div id="etw_logo"><a href="http://www.ytocorp.com/index.html"><img height="50" src="{{\Illuminate\Support\Facades\URL::asset('assets/img/logo_original.png')}}" alt="YTO International, Ltd."></a> </div>
+            <div id="etw_logo"><a href="{{route('indextrac')}}"><img height="50" src="{{\Illuminate\Support\Facades\URL::asset('assets/img/logo_original.png')}}" alt="YTO International, Ltd."></a> </div>
             <div class="etw_language">
                 <ul>
                     <li><a href="http://www.ytocorp.com/#"><span class="iconfont d-block d-lg-none"></span>
@@ -74,9 +76,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown"><a href="http://www.ytocorp.com/about.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">About YTO<span class="pro_icon">+</span></a>
+                            <li class="nav-item dropdown"><a href="{{route('about-us')}}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">About AGRO ONE<span class="pro_icon">+</span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://www.ytocorp.com/about.html" class="dropdown-item">Company Profile</a></li>
+                                    <li><a href="{{route('about-us')}}" class="dropdown-item">Company Profile</a></li>
                                     <li><a href="http://www.ytocorp.com/certificate.html" class="dropdown-item">Certificates</a></li>
                                     <li><a href="http://www.ytocorp.com/history.html" class="dropdown-item">History</a></li>
                                 </ul>
@@ -211,7 +213,7 @@
                             </li>
                             <li class="nav-item"><a href="http://www.ytocorp.com/service.html" class="nav-link">Service &amp; Support</a></li>
                             <li class="nav-item"><a href="http://www.ytocorp.com/video.html" class="nav-link">Videos</a></li>
-                            <li class="nav-item"><a href="http://www.ytocorp.com/contact.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="{{route('contact-us')}}" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -237,12 +239,12 @@
             <div class="content">
                 <div class="row">
                     <div class="col-12 col-lg-4">
-                        <div class="bottom_logo"><img src="./Agricultural Machinery Supplier _ YTO_files/logo.png" alt="YTO International, Ltd."></div>
+                        <div class="bottom_logo"><img src="{{\Illuminate\Support\Facades\URL::asset('assets/img/logo_original.png')}}" alt="YTO International, Ltd."></div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <div class="etw_hometitle"><a href="http://www.ytocorp.com/about.html">Quick Links</a></div>
+                        <div class="etw_hometitle"><a href="{{route('about-us')}}">Quick Links</a></div>
                         <ul>
-                            <li> <a href="http://www.ytocorp.com/about.html">Company Profile</a></li>
+                            <li> <a href="{{route('about-us')}}">Company Profile</a></li>
                             <li><a href="http://www.ytocorp.com/certificate.html">Certificates</a></li>
                             <li><a href="http://www.ytocorp.com/history.html">History</a></li>
                             <li><a href="http://www.ytocorp.com/r-d.html">R&amp;D</a></li>
@@ -274,7 +276,7 @@
     <div class="clearfix"></div>
     <div id="footer">
         <div id="etw_homefooter">
-            <div class="content"> <a href="http://www.ytocorp.com/about.html">About YTO</a> <a href="http://www.ytocorp.com/products.html">Products</a> <a href="http://www.ytocorp.com/capabilities.html">Capabilities</a> <a href="http://www.ytocorp.com/service.html">Service &amp; Support</a> <a href="http://www.ytocorp.com/video.html">Videos</a> <a href="http://www.ytocorp.com/contact.html">Contact</a> <a href="http://www.ytocorp.com/review.html">Review</a></div>
+            <div class="content"> <a href="{{route('about-us')}}">About AGRO ONE</a> <a href="http://www.ytocorp.com/products.html">Products</a> <a href="http://www.ytocorp.com/capabilities.html">Capabilities</a> <a href="http://www.ytocorp.com/service.html">Service &amp; Support</a> <a href="http://www.ytocorp.com/video.html">Videos</a> <a href="http://www.ytocorp.com/contact.html">Contact</a> <a href="http://www.ytocorp.com/review.html">Review</a></div>
         </div>
         <div class="content">
             <div id="etw_footin">

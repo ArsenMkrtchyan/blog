@@ -28,7 +28,7 @@ class HomeController extends Controller
     }
     public function aboutus()
     {
-        return view('indexes.aboutus');
+        return view('indexes.about-us');
     }
     public function contactus()
     {
