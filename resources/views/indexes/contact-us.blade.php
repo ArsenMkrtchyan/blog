@@ -28,44 +28,107 @@
 {{--            </div>--}}
 {{--        </div>--}}
 {{--    </nav>--}}
-@extends('indexes.layout')
+@extends('indexes.layout2')
 
 @section('content')
-    <main class="page">
-        <section class="clean-block clean-form dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Contact Us</h2>
-                    <section class="features">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2>Contact info</h2>
-                                    <p>Morbi non mauris massa. Duis elit mauris, malesuada nec suscipit ac, bibendum sed augue. Maecenas condimentum magna gravida, laoreet nunc sed, euismod sem. </p>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row icon-features">
-                                        <div class="col-4 icon-feature"><i class="fa fa-map-marker"></i>
-                                            <p>Place</p>
-                                            <p>lkjlkdjfsdfjsd pofpsdfjñklsdjkljd </p>
-                                        </div>
-                                        <div class="col-4 icon-feature"><i class="fa fa-phone"></i>
-                                            <p>Phone Number</p>
-                                            <p>6454875340 - 44095834985</p>
-                                        </div>
-                                        <div class="col-4 icon-feature"><i class="fa fa-envelope"></i>
-                                            <p>Correo </p>
-                                            <p style="margin: -7px;">ejemplo@ejempl.com </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+
+    <div>
+
+        <!------ Include the above in your HEAD tag ---------->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+        <div class="container">
+            <h1 class="text-center">Contact Address</h1>
+            <hr>
+            <div class="row">
+                <div class="col-sm-8">
+                    <html>
+                    <head>
+                        <title>Add a Map with Markers using HTML</title>
+
+                        <link rel="stylesheet" type="text/css" href="./style.css" />
+                        <script type="module" src="./index.js"></script>
+                    </head>
+                    <body>
+                    <gmp-map
+                        center="40.817882,44.492218"
+                        zoom="15"
+                        map-id="DEMO_MAP_ID"
+                        style="height: 400px"
+                    >
+                        <gmp-advanced-marker
+                            position="40.817882,44.492218"
+                            zoom="15"
+                            title="Mountain View, CA"
+                        ></gmp-advanced-marker>
+
+                    </gmp-map>
+
+                    <!--
+                      The `defer` attribute causes the script to execute after the full HTML
+                      document has been parsed. For non-blocking uses, avoiding race conditions,
+                      and consistent behavior across browsers, consider loading using Promises. See
+                      https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+                      for more information.
+                      -->
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfSbZbiMuxa9YkTK8SqsTbr2L2GThdRGs&libraries=maps,marker&v=beta"
+                        defer
+                    ></script>
+                    </body>
+                    </html>
+                </div>
+
+                <div class="col-sm-4" id="contact2">
+                    <h3>AgroOne բռենդ</h3>
+                    <hr align="left" width="50%">
+                    <h4 class="pt-2">ՉինՎան ՍՊԸ</h4>
+                    <i class="fas fa-user" style="color:#000"></i> Տնօրեն-Վահե Նաջարյան <br>
+                    <i class="fas " style="color:#000"></i>Հեռ․<a href="tel:">+37441080851</a><br>
+<p></p>
+                    <i class="fas fa-globe" style="color:#000"></i> Հասցե<br>
+                    <p></p>
+                    <i class="fas " style="color:#000"></i>ք․ Վանաձոր, Շիրակի խճ․ 21<br>
+
+                    <p></p>
+                    <i class="fas fa-user" style="color:#000"></i> Վաճառքի բաժին -<br>
+                    <i class="fas " style="color:#000"></i>Հեռ․<a href="tel:">+37441080831</a><br>
+                    <i class="fas " style="color:#000"></i>Հեռ․<a href="tel:">+37441080891</a><br>
+
+<p></p>
+
+                    <h4 class="pt-2 fa fa-envelope" style="font-size: 20px">Email -</h4>
+                    <i class="fa " style="color:#000"></i><a href="email:">infoagroone@gmail.com</a><br>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+
+
+
+        <br><br>
+        <style> hr {border-top: 1px solid #000; width:50%;}
+
+            a {color: #000;}
+
+            a:link{text-decoration:none;}
+
+            #contact2{
+                letter-spacing:3px;
+            }
+
+
+
+            #author a{
+                color: #fff;
+                text-decoration: none;
+
+            }</style>
+
+
+
+    </div>
+
 @endsection
 {{--    <footer class="page-footer dark" style="margin: 254px;">--}}
 {{--        <div class="container">--}}

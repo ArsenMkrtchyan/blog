@@ -49,7 +49,7 @@
     <div id="header">
         <div id="headerin" class="clearfix">
 
-            <div id="etw_logo"><a href="http://www.ytocorp.com/index.html"><img src="./Agricultural Machinery Supplier _ YTO_files/logo.png" alt="YTO International, Ltd."></a> </div>
+            <div id="etw_logo"><a href="http://www.ytocorp.com/index.html"><img height="50" src="{{\Illuminate\Support\Facades\URL::asset('assets/img/logo_original.png')}}" alt="YTO International, Ltd."></a> </div>
             <div class="etw_language">
                 <ul>
                     <li><a href="http://www.ytocorp.com/#"><span class="iconfont d-block d-lg-none"></span>
